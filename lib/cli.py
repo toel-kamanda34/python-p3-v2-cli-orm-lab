@@ -21,6 +21,7 @@ def main():
     while True:
         menu()
         choice = input("> ")
+        print(f"You selected option: {choice}") 
         if choice == "0":
             exit_program()
         elif choice == "1":
@@ -36,6 +37,7 @@ def main():
         elif choice == "6":
             delete_department()
         elif choice == "7":
+            print("Attempting to list employees...")
             list_employees()
         elif choice == "8":
             find_employee_by_name()
@@ -51,6 +53,7 @@ def main():
             list_department_employees()
         else:
             print("Invalid choice")
+        
 
 
 def menu():
